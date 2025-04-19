@@ -12,7 +12,7 @@ export class ReceitasService {
     return this.prisma.receita.create({
       data: {
         nome: createReceitaDto.nome,
-        descricao: createReceitaDto.descricao,
+        modoDePreparo: createReceitaDto.modoDePreparo,
       },
     });
   }
@@ -22,8 +22,8 @@ export class ReceitasService {
       select: {
         id: true,
         nome: true,
-        descricao: true,
-      }
+        modoDePreparo: true,
+      },
     });
   }
 
@@ -33,7 +33,7 @@ export class ReceitasService {
       select: {
         id: true,
         nome: true,
-        descricao: true,
+        modoDePreparo: true,
         ingredientes: {
           select: {
             ingrediente: {
@@ -41,12 +41,12 @@ export class ReceitasService {
                 id: true,
                 nome: true,
                 unidade: true,
-              }
+              },
             },
             quantidade: true,
-          }
-        }
-      }
+          },
+        },
+      },
     });
   }
 
@@ -55,8 +55,8 @@ export class ReceitasService {
       where: { id },
       data: {
         nome: updateReceitaDto.nome,
-        descricao: updateReceitaDto.descricao,
-      }
+        modoDePreparo: updateReceitaDto.modoDePreparo,
+      },
     });
   }
 

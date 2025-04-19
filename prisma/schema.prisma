@@ -17,7 +17,7 @@ datasource db {
 model Receita {
   id          Int      @id @default(autoincrement())
   nome        String
-  descricao   String
+  modoDePreparo   String
 
   ingredientes ReceitaIngrediente[]
 }

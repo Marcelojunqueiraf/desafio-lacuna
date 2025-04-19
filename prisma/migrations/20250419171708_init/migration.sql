@@ -2,7 +2,7 @@
 CREATE TABLE "Receita" (
     "id" SERIAL NOT NULL,
     "nome" TEXT NOT NULL,
-    "descricao" TEXT NOT NULL,
+    "modoDePreparo" TEXT NOT NULL,
 
     CONSTRAINT "Receita_pkey" PRIMARY KEY ("id")
 );

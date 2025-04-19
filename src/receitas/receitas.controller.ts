@@ -17,7 +17,7 @@ export class ReceitasController {
         description: 'Uma receita de bolo de chocolate',
         value: {
           nome: 'Bolo de Chocolate',
-          descricao: 'Um delicioso bolo de chocolate.',
+          modoDePreparo: 'Um delicioso bolo de chocolate.',
         },
       },
     },
@@ -45,7 +45,7 @@ export class ReceitasController {
         description: 'Atualiza a receita de bolo de chocolate',
         value: {
           nome: 'Bolo de Chocolate com Morango',
-          descricao: 'Um delicioso bolo de chocolate com morangos.',
+          modoDePreparo: 'Um delicioso bolo de chocolate com morangos.',
         },
       },
     },
