@@ -8,9 +8,9 @@ Instalar as dependências
 $ npm install
 ```
 
-Preparar banco de dados utilizando o prisma (importante já ter uma url de banco de dados válida)
+Preparar banco de dados utilizando o prisma (importante já ter uma url de banco de dados válida no .env)
 ```bash
-$ npx prisma migrate reset
+$ npx prisma migrate dev
 ```
 
 Iniciar o servidor em modo desenvolvimento
@@ -26,3 +26,9 @@ A documentação swagger fica na rota http://localhost:3000/api
 
 ## Script de teste
 O script testAPI.js foi utilizado para testar a API simulando um usuário real usando axios
+
+O script vai falhar caso o banco de dados não esteja vazio no momento de sua execução
+Para limpar o banco de dados, utilize o comando
+```bash
+$ npx prisma migrate dev
+```
