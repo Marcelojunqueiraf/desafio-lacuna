@@ -17,7 +17,7 @@ export class ReceitasController {
         description: 'Uma receita de bolo de chocolate',
         value: {
           nome: 'Bolo de Chocolate',
-          modoDePreparo: 'Um delicioso bolo de chocolate.',
+          modoDePreparo: 'Misture os ingredientes e asse por 30 minutos.',
         },
       },
     },
@@ -45,7 +45,7 @@ export class ReceitasController {
         description: 'Atualiza a receita de bolo de chocolate',
         value: {
           nome: 'Bolo de Chocolate com Morango',
-          modoDePreparo: 'Um delicioso bolo de chocolate com morangos.',
+          modoDePreparo: 'Misture os ingredientes e asse por 40 minutos.',
         },
       },
     },
