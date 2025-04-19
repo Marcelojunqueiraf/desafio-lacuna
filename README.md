@@ -31,5 +31,5 @@ O script vai falhar caso o banco de dados não esteja vazio no momento de sua ex
 
 Para limpar o banco de dados, utilize o comando
 ```bash
-$ npx prisma migrate dev
+$ npx prisma migrate reset
 ```
