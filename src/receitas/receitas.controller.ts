@@ -3,7 +3,7 @@ import { ReceitasService } from './receitas.service';
 import { CreateReceitaDto } from './dto/create-receita.dto';
 import { UpdateReceitaDto } from './dto/update-receita.dto';
 import { AddIngredienteDto } from './dto/add-ingrediente.dto';
-import { ApiBody, ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiBody } from '@nestjs/swagger';
 
 @Controller('receitas')
 export class ReceitasController {
