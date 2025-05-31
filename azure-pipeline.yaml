@@ -1,0 +1,13 @@
+pr:
+  - main
+
+jobs:
+  - job: Lint
+    displayName: 'Lint Code'
+    pool:
+      vmImage: 'ubuntu-latest'
+    timeoutInMinutes: 10
+
+    steps:
+      - checkout: self
+        fetchDepth: 0
