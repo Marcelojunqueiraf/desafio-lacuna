@@ -1,4 +1,4 @@
-FROM node:23 AS builder
+FROM  --platform=linux/amd64 node:22 AS builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN npx prisma generate \
     && npm run build \
     && npm prune --omit=dev
 
-FROM node:23-slim
+FROM --platform=linux/amd64 node:22-slim
 
 WORKDIR /app
 
@@ -24,5 +24,4 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/generated ./generated
 COPY --from=builder /app/prisma ./prisma
 
-# ENTRYPOINT [ "bash" ]
-ENTRYPOINT [ "node", "dist/main" ]
+ENTRYPOINT [ "sh", "-c", "echo Starting app && node dist/index.js" ]

@@ -1,6 +1,6 @@
 services:
   app:
-    image: receitas:v1
+    image: marcelojunqueiraf/receitas:v2
     container_name: nestjs-app
     ports:
       - "3000:3000" 
