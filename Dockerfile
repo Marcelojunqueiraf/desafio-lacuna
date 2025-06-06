@@ -24,4 +24,4 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/generated ./generated
 COPY --from=builder /app/prisma ./prisma
 
-ENTRYPOINT [ "sh", "-c", "echo Starting app && node dist/index.js" ]
+ENTRYPOINT [ "sh", "-c", "echo Starting app && node dist/main.js" ]
