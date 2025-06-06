@@ -1,7 +1,8 @@
 name: deploy
 on:
-  tags:
-    - 'v*.*.*'
+  push:
+    tags:
+      - 'v*.*.*'
 permissions:
   id-token: write
   contents: read
